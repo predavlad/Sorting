@@ -1,5 +1,6 @@
 <?php
 /**
+ * !!! NOT FINISHED YET !!!
  * Class MergeSort
  *
  * Worst case performance:      O(n log n)
