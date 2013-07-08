@@ -28,10 +28,13 @@ class BubbleSort
             for ($i = 0; $i < $this->length - 1; $i ++):
 
                 if ($this->array[$i] > $this->array[$i + 1]):
-
-                    $this->array[$i]    += $this->array[$i + 1];
+                    
+                    list($this->array[$i + 1], $this->array[$i]) =
+                        array($this->array[$i], $this->array[$i + 1]);
+                        
+                    /*$this->array[$i]    += $this->array[$i + 1];
                     $this->array[$i + 1] = $this->array[$i] - $this->array[$i + 1];
-                    $this->array[$i]    -= $this->array[$i + 1];
+                    $this->array[$i]    -= $this->array[$i + 1];*/
 
                     $sorted = false;
 
